@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		428DA3BB133B1E7E00357843 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428DA3BA133B1E7E00357843 /* UIKit.framework */; };
+		428DA3BD133B1E7E00357843 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428DA3BC133B1E7E00357843 /* Foundation.framework */; };
+		428DA3BF133B1E7E00357843 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428DA3BE133B1E7E00357843 /* CoreGraphics.framework */; };
+		428DA3C5133B1E7E00357843 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 428DA3C3133B1E7E00357843 /* InfoPlist.strings */; };
+		428DA3C8133B1E7E00357843 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 428DA3C7133B1E7E00357843 /* main.m */; };
+		428DA3CB133B1E7E00357843 /* PlayVideoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 428DA3CA133B1E7E00357843 /* PlayVideoAppDelegate.m */; };
+		428DA3CE133B1E7E00357843 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 428DA3CC133B1E7E00357843 /* MainWindow.xib */; };
+		428DA3D1133B1E7E00357843 /* PlayVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 428DA3D0133B1E7E00357843 /* PlayVideoViewController.m */; };
+		428DA3D4133B1E7E00357843 /* PlayVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 428DA3D2133B1E7E00357843 /* PlayVideoViewController.xib */; };
+		428DA3DB133B254200357843 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428DA3DA133B254200357843 /* MediaPlayer.framework */; };
+		428DA3DD133B26E300357843 /* 0901 Goodbye.mov in Resources */ = {isa = PBXBuildFile; fileRef = 428DA3DC133B26E300357843 /* 0901 Goodbye.mov */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		428DA3B6133B1E7E00357843 /* PlayVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		428DA3BA133B1E7E00357843 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		428DA3BC133B1E7E00357843 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		428DA3BE133B1E7E00357843 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		428DA3C2133B1E7E00357843 /* PlayVideo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PlayVideo-Info.plist"; sourceTree = "<group>"; };
+		428DA3C4133B1E7E00357843 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		428DA3C6133B1E7E00357843 /* PlayVideo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlayVideo-Prefix.pch"; sourceTree = "<group>"; };
+		428DA3C7133B1E7E00357843 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		428DA3C9133B1E7E00357843 /* PlayVideoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayVideoAppDelegate.h; sourceTree = "<group>"; };
+		428DA3CA133B1E7E00357843 /* PlayVideoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayVideoAppDelegate.m; sourceTree = "<group>"; };
+		428DA3CD133B1E7E00357843 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		428DA3CF133B1E7E00357843 /* PlayVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayVideoViewController.h; sourceTree = "<group>"; };
+		428DA3D0133B1E7E00357843 /* PlayVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayVideoViewController.m; sourceTree = "<group>"; };
+		428DA3D3133B1E7E00357843 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PlayVideoViewController.xib; sourceTree = "<group>"; };
+		428DA3DA133B254200357843 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		428DA3DC133B26E300357843 /* 0901 Goodbye.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "0901 Goodbye.mov"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		428DA3B3133B1E7E00357843 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				428DA3BB133B1E7E00357843 /* UIKit.framework in Frameworks */,
+				428DA3BD133B1E7E00357843 /* Foundation.framework in Frameworks */,
+				428DA3BF133B1E7E00357843 /* CoreGraphics.framework in Frameworks */,
+				428DA3DB133B254200357843 /* MediaPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		428DA3AB133B1E7E00357843 = {
+			isa = PBXGroup;
+			children = (
+				428DA3C0133B1E7E00357843 /* PlayVideo */,
+				428DA3B9133B1E7E00357843 /* Frameworks */,
+				428DA3B7133B1E7E00357843 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		428DA3B7133B1E7E00357843 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				428DA3B6133B1E7E00357843 /* PlayVideo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		428DA3B9133B1E7E00357843 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				428DA3DA133B254200357843 /* MediaPlayer.framework */,
+				428DA3BA133B1E7E00357843 /* UIKit.framework */,
+				428DA3BC133B1E7E00357843 /* Foundation.framework */,
+				428DA3BE133B1E7E00357843 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		428DA3C0133B1E7E00357843 /* PlayVideo */ = {
+			isa = PBXGroup;
+			children = (
+				428DA3C9133B1E7E00357843 /* PlayVideoAppDelegate.h */,
+				428DA3CA133B1E7E00357843 /* PlayVideoAppDelegate.m */,
+				428DA3CC133B1E7E00357843 /* MainWindow.xib */,
+				428DA3CF133B1E7E00357843 /* PlayVideoViewController.h */,
+				428DA3D0133B1E7E00357843 /* PlayVideoViewController.m */,
+				428DA3D2133B1E7E00357843 /* PlayVideoViewController.xib */,
+				428DA3C1133B1E7E00357843 /* Supporting Files */,
+			);
+			path = PlayVideo;
+			sourceTree = "<group>";
+		};
+		428DA3C1133B1E7E00357843 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				428DA3DC133B26E300357843 /* 0901 Goodbye.mov */,
+				428DA3C2133B1E7E00357843 /* PlayVideo-Info.plist */,
+				428DA3C3133B1E7E00357843 /* InfoPlist.strings */,
+				428DA3C6133B1E7E00357843 /* PlayVideo-Prefix.pch */,
+				428DA3C7133B1E7E00357843 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		428DA3B5133B1E7E00357843 /* PlayVideo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 428DA3D7133B1E7E00357843 /* Build configuration list for PBXNativeTarget "PlayVideo" */;
+			buildPhases = (
+				428DA3B2133B1E7E00357843 /* Sources */,
+				428DA3B3133B1E7E00357843 /* Frameworks */,
+				428DA3B4133B1E7E00357843 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlayVideo;
+			productName = PlayVideo;
+			productReference = 428DA3B6133B1E7E00357843 /* PlayVideo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		428DA3AD133B1E7E00357843 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 428DA3B0133B1E7E00357843 /* Build configuration list for PBXProject "PlayVideo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 428DA3AB133B1E7E00357843;
+			productRefGroup = 428DA3B7133B1E7E00357843 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				428DA3B5133B1E7E00357843 /* PlayVideo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		428DA3B4133B1E7E00357843 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				428DA3C5133B1E7E00357843 /* InfoPlist.strings in Resources */,
+				428DA3CE133B1E7E00357843 /* MainWindow.xib in Resources */,
+				428DA3D4133B1E7E00357843 /* PlayVideoViewController.xib in Resources */,
+				428DA3DD133B26E300357843 /* 0901 Goodbye.mov in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		428DA3B2133B1E7E00357843 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				428DA3C8133B1E7E00357843 /* main.m in Sources */,
+				428DA3CB133B1E7E00357843 /* PlayVideoAppDelegate.m in Sources */,
+				428DA3D1133B1E7E00357843 /* PlayVideoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		428DA3C3133B1E7E00357843 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				428DA3C4133B1E7E00357843 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		428DA3CC133B1E7E00357843 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				428DA3CD133B1E7E00357843 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		428DA3D2133B1E7E00357843 /* PlayVideoViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				428DA3D3133B1E7E00357843 /* en */,
+			);
+			name = PlayVideoViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		428DA3D5133B1E7E00357843 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		428DA3D6133B1E7E00357843 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		428DA3D8133B1E7E00357843 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlayVideo/PlayVideo-Prefix.pch";
+				INFOPLIST_FILE = "PlayVideo/PlayVideo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		428DA3D9133B1E7E00357843 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlayVideo/PlayVideo-Prefix.pch";
+				INFOPLIST_FILE = "PlayVideo/PlayVideo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		428DA3B0133B1E7E00357843 /* Build configuration list for PBXProject "PlayVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				428DA3D5133B1E7E00357843 /* Debug */,
+				428DA3D6133B1E7E00357843 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		428DA3D7133B1E7E00357843 /* Build configuration list for PBXNativeTarget "PlayVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				428DA3D8133B1E7E00357843 /* Debug */,
+				428DA3D9133B1E7E00357843 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 428DA3AD133B1E7E00357843 /* Project object */;
+}

@@ -1,0 +1,207 @@
+// !$*UTF8*$!
+{
+	1D6058900D05DD3D006BFB54 /* Instatwit */ = {
+		activeExec = 0;
+		executables = (
+			42411EE312E534BD0095505E /* Instatwit */,
+		);
+	};
+	28D7ACF60DDB3853001CB0EB /* InstatwitViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {803, 416}}";
+			sepNavSelRange = "{883, 0}";
+			sepNavVisRange = "{145, 738}";
+			sepNavWindowFrame = "{{15, 50}, {750, 828}}";
+		};
+	};
+	28D7ACF70DDB3853001CB0EB /* InstatwitViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1076, 1599}}";
+			sepNavSelRange = "{2054, 0}";
+			sepNavVisRange = "{1746, 1102}";
+			sepNavWindowFrame = "{{15, 50}, {750, 828}}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 42411EE312E534BD0095505E /* Instatwit */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Instatwit */;
+		codeSenseManager = 42411EED12E534C00095505E /* Code sense */;
+		executables = (
+			42411EE312E534BD0095505E /* Instatwit */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					229,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					341,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					301,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 320492205;
+			PBXWorkspaceStateSaveDate = 320492205;
+		};
+		perUserProjectItems = {
+			4240A4C5130B8A8900FBB37A /* PBXTextBookmark */ = 4240A4C5130B8A8900FBB37A /* PBXTextBookmark */;
+			4254DD0A131A8E3700590712 /* PlistBookmark */ = 4254DD0A131A8E3700590712 /* PlistBookmark */;
+			42CDAAEB1319550A00FEEF58 /* PBXTextBookmark */ = 42CDAAEB1319550A00FEEF58 /* PBXTextBookmark */;
+			42CDAB03131955E100FEEF58 /* PBXTextBookmark */ = 42CDAB03131955E100FEEF58 /* PBXTextBookmark */;
+			42CDAB0A131956B600FEEF58 /* PlistBookmark */ = 42CDAB0A131956B600FEEF58 /* PlistBookmark */;
+		};
+		sourceControlManager = 42411EEC12E534C00095505E /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	32CA4F630368D1EE00C91783 /* Instatwit_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {642, 308}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 187}";
+		};
+	};
+	4240A4C5130B8A8900FBB37A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* InstatwitViewController.h */;
+		name = "InstatwitViewController.h: 32";
+		rLen = 0;
+		rLoc = 883;
+		rType = 0;
+		vrLen = 738;
+		vrLoc = 145;
+	};
+	42411EE312E534BD0095505E /* Instatwit */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Instatwit;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	42411EEC12E534C00095505E /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	42411EED12E534C00095505E /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	4254DD0A131A8E3700590712 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Instatwit-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/dli/Documents/Instatwit/Instatwit-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	42CDAAEB1319550A00FEEF58 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* InstatwitViewController.m */;
+		name = "InstatwitViewController.m: 82";
+		rLen = 0;
+		rLoc = 2054;
+		rType = 0;
+		vrLen = 1102;
+		vrLoc = 1746;
+	};
+	42CDAB03131955E100FEEF58 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 32CA4F630368D1EE00C91783 /* Instatwit_Prefix.pch */;
+		name = "Instatwit_Prefix.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 187;
+		vrLoc = 0;
+	};
+	42CDAB0A131956B600FEEF58 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Instatwit-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/dli/Documents/Instatwit/Instatwit-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+}

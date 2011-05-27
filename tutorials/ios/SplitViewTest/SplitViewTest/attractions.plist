@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<string>Hollywood</string>
+		<string>http://en.wikipedia.org/wiki/hollywood</string>
+	</array>
+	<array>
+		<string>Disneyland</string>
+		<string>http://en.wikipedia.org/wiki/disneyland</string>
+	</array>
+	<array>
+		<string>San Simeon</string>
+		<string>http://en.wikipedia.org/wiki/San_Simeon,_California</string>
+	</array>
+	<array>
+		<string>Golden Gate Bridge</string>
+		<string>http://en.wikipedia.org/wiki/Golden_Gate_Bridge</string>
+	</array>
+	<array>
+		<string>Universal Studios</string>
+		<string>http://en.wikipedia.org/wiki/Universal_Studios_Hollywood</string>
+	</array>
+	<array>
+		<string>Big Sur</string>
+		<string>http://en.wikipedia.org/wiki/Big_Sur</string>
+	</array>
+	<array>
+		<string>Napa Valley</string>
+		<string>http://en.wikipedia.org/wiki/Napa_valley</string>
+	</array>
+	<array>
+		<string>SeaWorld</string>
+		<string>http://en.wikipedia.org/wiki/SeaWorld_San_Diego</string>
+	</array>
+	<array>
+		<string>Lake Tahoe</string>
+		<string>http://en.wikipedia.org/wiki/Lake_tahoe</string>
+	</array>
+	<array>
+		<string>Monterey Bay Aquarium</string>
+		<string>http://en.wikipedia.org/wiki/Monterey_Bay_Aquarium</string>
+	</array>
+</array>
+</plist>

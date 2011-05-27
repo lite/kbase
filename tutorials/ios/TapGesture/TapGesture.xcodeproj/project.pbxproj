@@ -1,0 +1,285 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		428DA384133A513B00357843 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428DA383133A513B00357843 /* UIKit.framework */; };
+		428DA386133A513B00357843 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428DA385133A513B00357843 /* Foundation.framework */; };
+		428DA388133A513B00357843 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428DA387133A513B00357843 /* CoreGraphics.framework */; };
+		428DA38E133A513B00357843 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 428DA38C133A513B00357843 /* InfoPlist.strings */; };
+		428DA391133A513B00357843 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 428DA390133A513B00357843 /* main.m */; };
+		428DA394133A513B00357843 /* TapGestureAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 428DA393133A513B00357843 /* TapGestureAppDelegate.m */; };
+		428DA397133A513B00357843 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 428DA395133A513B00357843 /* MainWindow.xib */; };
+		428DA39A133A513B00357843 /* TapGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 428DA399133A513B00357843 /* TapGestureViewController.m */; };
+		428DA39D133A513B00357843 /* TapGestureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 428DA39B133A513B00357843 /* TapGestureViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		428DA37F133A513B00357843 /* TapGesture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapGesture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		428DA383133A513B00357843 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		428DA385133A513B00357843 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		428DA387133A513B00357843 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		428DA38B133A513B00357843 /* TapGesture-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TapGesture-Info.plist"; sourceTree = "<group>"; };
+		428DA38D133A513B00357843 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		428DA38F133A513B00357843 /* TapGesture-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TapGesture-Prefix.pch"; sourceTree = "<group>"; };
+		428DA390133A513B00357843 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		428DA392133A513B00357843 /* TapGestureAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TapGestureAppDelegate.h; sourceTree = "<group>"; };
+		428DA393133A513B00357843 /* TapGestureAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TapGestureAppDelegate.m; sourceTree = "<group>"; };
+		428DA396133A513B00357843 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		428DA398133A513B00357843 /* TapGestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TapGestureViewController.h; sourceTree = "<group>"; };
+		428DA399133A513B00357843 /* TapGestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TapGestureViewController.m; sourceTree = "<group>"; };
+		428DA39C133A513B00357843 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TapGestureViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		428DA37C133A513B00357843 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				428DA384133A513B00357843 /* UIKit.framework in Frameworks */,
+				428DA386133A513B00357843 /* Foundation.framework in Frameworks */,
+				428DA388133A513B00357843 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		428DA374133A513B00357843 = {
+			isa = PBXGroup;
+			children = (
+				428DA389133A513B00357843 /* TapGesture */,
+				428DA382133A513B00357843 /* Frameworks */,
+				428DA380133A513B00357843 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		428DA380133A513B00357843 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				428DA37F133A513B00357843 /* TapGesture.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		428DA382133A513B00357843 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				428DA383133A513B00357843 /* UIKit.framework */,
+				428DA385133A513B00357843 /* Foundation.framework */,
+				428DA387133A513B00357843 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		428DA389133A513B00357843 /* TapGesture */ = {
+			isa = PBXGroup;
+			children = (
+				428DA392133A513B00357843 /* TapGestureAppDelegate.h */,
+				428DA393133A513B00357843 /* TapGestureAppDelegate.m */,
+				428DA395133A513B00357843 /* MainWindow.xib */,
+				428DA398133A513B00357843 /* TapGestureViewController.h */,
+				428DA399133A513B00357843 /* TapGestureViewController.m */,
+				428DA39B133A513B00357843 /* TapGestureViewController.xib */,
+				428DA38A133A513B00357843 /* Supporting Files */,
+			);
+			path = TapGesture;
+			sourceTree = "<group>";
+		};
+		428DA38A133A513B00357843 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				428DA38B133A513B00357843 /* TapGesture-Info.plist */,
+				428DA38C133A513B00357843 /* InfoPlist.strings */,
+				428DA38F133A513B00357843 /* TapGesture-Prefix.pch */,
+				428DA390133A513B00357843 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		428DA37E133A513B00357843 /* TapGesture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 428DA3A0133A513C00357843 /* Build configuration list for PBXNativeTarget "TapGesture" */;
+			buildPhases = (
+				428DA37B133A513B00357843 /* Sources */,
+				428DA37C133A513B00357843 /* Frameworks */,
+				428DA37D133A513B00357843 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TapGesture;
+			productName = TapGesture;
+			productReference = 428DA37F133A513B00357843 /* TapGesture.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		428DA376133A513B00357843 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 428DA379133A513B00357843 /* Build configuration list for PBXProject "TapGesture" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 428DA374133A513B00357843;
+			productRefGroup = 428DA380133A513B00357843 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				428DA37E133A513B00357843 /* TapGesture */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		428DA37D133A513B00357843 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				428DA38E133A513B00357843 /* InfoPlist.strings in Resources */,
+				428DA397133A513B00357843 /* MainWindow.xib in Resources */,
+				428DA39D133A513B00357843 /* TapGestureViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		428DA37B133A513B00357843 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				428DA391133A513B00357843 /* main.m in Sources */,
+				428DA394133A513B00357843 /* TapGestureAppDelegate.m in Sources */,
+				428DA39A133A513B00357843 /* TapGestureViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		428DA38C133A513B00357843 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				428DA38D133A513B00357843 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		428DA395133A513B00357843 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				428DA396133A513B00357843 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		428DA39B133A513B00357843 /* TapGestureViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				428DA39C133A513B00357843 /* en */,
+			);
+			name = TapGestureViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		428DA39E133A513B00357843 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		428DA39F133A513B00357843 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		428DA3A1133A513C00357843 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TapGesture/TapGesture-Prefix.pch";
+				INFOPLIST_FILE = "TapGesture/TapGesture-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		428DA3A2133A513C00357843 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TapGesture/TapGesture-Prefix.pch";
+				INFOPLIST_FILE = "TapGesture/TapGesture-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		428DA379133A513B00357843 /* Build configuration list for PBXProject "TapGesture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				428DA39E133A513B00357843 /* Debug */,
+				428DA39F133A513B00357843 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		428DA3A0133A513C00357843 /* Build configuration list for PBXNativeTarget "TapGesture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				428DA3A1133A513C00357843 /* Debug */,
+				428DA3A2133A513C00357843 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 428DA376133A513B00357843 /* Project object */;
+}

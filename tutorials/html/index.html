@@ -1,0 +1,75 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+	<title></title> 
+	<!-- Basic Meta Data --> 
+	<meta charset="utf-8" /> 
+	<!--Stylesheets--> 
+  <!-- <link href="css/reset.css" type="text/css" media="screen" rel="stylesheet" />  -->
+  <link href="css/style.css" type="text/css" media="screen" rel="stylesheet" /> 
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" media="screen" href="/css/ie.css" /><![endif]--> 
+	<!--[if lt IE 9]><link rel="stylesheet" type="text/css" media="screen" href="/css/ie-rgba.css" /><![endif]--> 
+</head> 
+<body> 
+		<div id="main"> 
+		<div id="header" class="wrapper clear"> 
+			<div id="logo"> 
+				<a href="/">pyelite</a> 
+			</div><!--end-logo--> 
+			<div id="member"> 
+					Already a member? <a class="loginlink" href="/members/login.php"><span>Sign in</span></a> 
+			</div><!--end member--> 
+			  <fieldset id="login-form" class="clear" style="display:none"> 
+					<form class="hmform" action="/members/login.php" method="post"> 
+						<div> 
+							<label for="username">Username:</label> 
+							<input id="username" class="text" type="text" name="amember_login" /> 
+						</div> 
+						<div> 
+							<label for="username">Password:</label> 
+							<input id="password" class="text" type="password" name="amember_pass" /> 
+						</div> 
+						<p><input type="submit" class="button" value="Sign in" /></p> 
+						<p class="signup">Not a member? <a href="/members/signup.php">Sign-up</a></p> 
+					</form> 
+				</fieldset> 
+		</div><!--end header--> 
+		<div id="nav" class="clear"> 
+			<ul class="wrapper"> 
+				<li><a  href="/">Home <span>latest release</span></a></li> 
+				<li><a class="active" href="/wordpress/">Theme Collection <span>browse our themes</span></a></li> 
+				<li><a  href="/about/">About <span>info + contact</span></a></li> 
+				<li><a  href="/forums/">Member Resources <span>support + downloads</span></a></li> 
+				<li id="nav-blog"><a href="/blog/">The Ledger <span>latest news</span></a></li> 
+				<li id="nav-signup"><a href="/members/signup.php">Purchase <span>Go PRO!</span></a></li> 
+			</ul> 
+		</div><!--end-nav--> 
+		<div class="wrapper">	<div id="tagline"> 
+      <h1 class="tag-photography">Photography WordPress Theme</h1> 
+	  </div><!--end-tagline--> 
+	  <div class="content-full"> 
+	  </div><!--end content-full--> 
+	<div id="footer-copyright"> 
+		<p> 
+			<a href="http://jestro.com"> 
+				<img src="/images/jestro.png" alt="Jestro" /> Copyright &copy; 2008 - 2011 Jestro LLC.
+			</a> 
+			The Theme Foundry&trade; is a registered trademark of <a href="http://jestro.com">Jestro</a> LLC.
+		</p> 
+	</div><!--end copyright--> 
+</div><!--end wrapper--> 
+</div><!--end main--> 
+<!--Scripts--> 
+<script src="http://code.jquery.com/jquery-1.4.4.min.js"></script> 
+<script>
+$(document).ready(function($) {
+ // log in link box toggle
+  $('a.loginlink').click(function() {
+    $(this).toggleClass("login-open");
+    $("#login-form").toggle();
+    return false;
+  });
+});
+</script>
+</body> 
+</html>

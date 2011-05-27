@@ -1,0 +1,5 @@
+<uwsgi>
+  <socket>127.0.0.1:3031</socket>
+  <pythonpath>/home/dli/code/projects</pythonpath>
+  <module>django_uwsgi</module>
+</uwsgi>
