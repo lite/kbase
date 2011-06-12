@@ -13,6 +13,7 @@ Ctrl-b move back on character
 Ctrl-f move forward one character
 Esc-b move back one word
 Esc-f move forward one word
+Esc-t arg1 arg2 => arg2 arg1
 Ctrl-u delete from the cursor to the beginning of the line
 Ctrl-k delete from the cursor to the end of the line
 ```
