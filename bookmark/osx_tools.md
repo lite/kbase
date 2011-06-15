@@ -2,25 +2,22 @@ Mac OSx
 ====
 
 Tools
-----
-Trillian
+----                         
 Path Finder
-Divvy
-DTerm
-Textmate/Macvim
+Divvy                        
+Textmate/Macvim/Sublime_Text_2
 SubEthaEdit
 VLC
 sArchive
 Little Snitch
 Transmit
+Vuze
 Teamviewer
 CleanApp
 MacPilot
-Chrome/Firefox
-Evernote
-VMware/VirtualBox
-ACDSee pro
-Office
+Chrome/Firefox   
+VMware/VirtualBox 
+Sparrow
 
 web
 ----
@@ -35,6 +32,10 @@ homebrew
 Peepopen
 Vagrant
 python/ruby
+curl get.pow.cx | sh 
+autossh -M 21010 -N root@fssle.com -D 127.0.0.1:1080
+sshuttle(https://github.com/apenwarr/sshuttle)
+              
 
 web
 ----

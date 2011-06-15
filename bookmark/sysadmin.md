@@ -12,4 +12,8 @@ pow
 ----
 http://www.pogodan.com/blog/2011/5/3/reverse-ssh-tunnel-any-rack-app-with-pow-and-nginx
 http://technicaldebt.com/?p=811
-
+                                                           
+                               
+PlowShare
+----
+http://code.google.com/p/plowshare/wiki/Readme
