@@ -1,3 +1,10 @@
++ To create an image of a CD (or DVD or anything else…) use the following:
+
+```                                             
+diskutil unmount /Volumes/Untitled\ UDF\ Volume/
+dd if=/dev/disk1s0 of=20110601.iso bs=64k
+```
+
 + Resample image so height and width aren't greater than specified size, e.g. 100x100
 
 ```
