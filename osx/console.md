@@ -1,29 +1,46 @@
-+ To create an image of a CD (or DVD or anything else…) use the following:
++ sysctl
 
-```                                             
-diskutil unmount /Volumes/Untitled\ UDF\ Volume/
-dd if=/dev/disk1s0 of=20110601.iso bs=64k
-```
+reducing in case of available port bottleneck.
 
-+ Resample image so height and width aren't greater than specified size, e.g. 100x100
+	sudo sysctl -w net.inet.tcp.msl=1000
 
-```
-sips -Z 100x100 image.jpg
-```
++ utils
+
+install tools for sys admin
+
+	brew install axel iftop wget git lsof bmon unrar htop p7zip w3m
+
++ lsof 
+
+replacement netstat cmd to find ports used by apps on OS X
+
+	sudo lsof -i -P
+
++ diskutil 
+
+To create an image of a CD (or DVD or anything else…) use the following:
+
+	diskutil unmount /Volumes/Untitled\ UDF\ Volume/
+	diskutil mountDisk disk1
+	dd if=/dev/disk1s0 of=20110601.iso bs=64k
+	
++ sips 
+
+Resample image so height and width aren't greater than specified size, e.g. 100x100
+
+	sips -Z 100x100 image.jpg
 
 + keymap
 
-```
-Ctrl-a moves to the start of the line
-Ctrl-e moves to the end of the line
-Ctrl-b move back on character
-Ctrl-f move forward one character
-Esc-b move back one word
-Esc-f move forward one word
-Esc-t arg1 arg2 => arg2 arg1
-Ctrl-u delete from the cursor to the beginning of the line
-Ctrl-k delete from the cursor to the end of the line
-```
+> + Ctrl-a moves to the start of the line
+> + Ctrl-e moves to the end of the line
+> + Ctrl-b move back on character
+> + Ctrl-f move forward one character
+> + Esc-b move back one word
+> + Esc-f move forward one word
+> + Esc-t arg1 arg2 => arg2 arg1
+> + Ctrl-u delete from the cursor to the beginning of the line
+> + Ctrl-k delete from the cursor to the end of the line
 
 + hdiutil 
 
@@ -130,6 +147,10 @@ ack layout
 + dstat & sar
 
 + siege & tsung
+
+run command in shell 
+	
+	siege -c50 http://yourserver.com
 
 + socat
 
