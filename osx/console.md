@@ -1,14 +1,33 @@
++ tutti
+
+Interactively run Javascript on multiple browsers
+
+	https://github.com/airportyh/Tutti/
+
+	brew install nod npm
+	curl http://npmjs.org/install.sh | sh
+	npm install tutti
+	tutti http://tuttijs.com:46071
+
++ virtualbox
+
+use VBoxHeadless as the front-end to the internal virtualization engine
+
+	VBoxManage startvm $vm --type headless
+	VBoxHeadless --startvm $vm
+
 + sysctl
 
 reducing in case of available port bottleneck.
 
 	sudo sysctl -w net.inet.tcp.msl=1000
+	
 
 + utils
 
 install tools for sys admin
 
-	brew install axel iftop wget git lsof bmon unrar htop p7zip w3m
+	brew install axel iftop wget git lsof bmon unrar htop p7zip w3m watch ragel iperf
 
 + lsof 
 

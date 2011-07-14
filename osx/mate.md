@@ -1,4 +1,44 @@
+Plugins
+====
+
+MissingDrawer
+
+	$ curl -L https://github.com/downloads/jezdez/textmate-missingdrawer/MissingDrawer-0.4.0.tmplugin.zip | tar -xf - && open MissingDrawer.tmplugin
+
+NiceFind2
+
+	http://cloud.github.com/downloads/briancollins/nice_find/NiceFind2.1.tmplugin.zip
+
+HTML CSS
+
+	http://minimaldesign.net/downloads/tools/textmate-css-bundle
+	http://minimaldesign.net/downloads/tools/textmate-html-bundle
+	
+HAML SASS
+	
+	$ cd ~/Library/Application\ Support/TextMate/Bundles/
+	$ git clone git://github.com/handcrafted/handcrafted-haml-textmate-bundle.git HAML-Handcrafted.tmbundle
+	$ git clone git://github.com/seaofclouds/sass-textmate-bundle.git "Ruby Saas.tmbundle"
+	$ osascript -e 'tell app "TextMate" to reload bundles'
+
+The Hidden Magic in TextMate
+====
+
+http://thinkvitamin.com/code/the-hidden-magic-in-textmate/
+
+⌘T – Go to File – This shortcut is truly second to none. Instead of trawling through your project drawer or going through the folders in your finder, use this to quickly jump straight to any file you wish to be in.
+⇧⌘T – Go to Symbol – This works in the same way as Go to File but for within a specific file. Trying to find a set method or a global variable? Look no further good sir, this is what you need. Especially useful for when you’re working with a massive user model!
+⌘L – Go to Line – If you’re debugging a stack trace, you’ll want to remember this one. Jump to an exact point within a file to squash that nasty bug!
+⇧⌘L – Select Line – Select the entire line of code you’re working on. Chances are you may want to follow it up with…
+⌃⌘ + ARROW – Move Code – Move the selected code around the file, helps when doing some refactoring of that nasty functional code.
+⇧⌃⌥V – Send selected to Pastie – This one is pretty unknown but handy. Send the selected code over to Pastie with a private URL for sharing the code – great when you need some feedback from a fellow developer.
+⌃S – Simple Search – Most folks know about ⌘F as it’s the same in most applications. However in TextMate it loads up an additional window for find and replace which isn’t always what you want. This shortcut allows you to do a quick search in the current file iteratively.
+⌘] and ⌘[ – Block indentation – Indenting manually can be a pain – use these functions to indent blocks of code quickly and easily.
+⇧⌃T – To-do list – This feature scans the project for code marked as ‘FIXME’, ‘TODO’ and ‘CHANGED’. It provides an informative list of them along with comments.
+
+
 TextMate (Pete's notes)
+====
  
 http://nets.ucar.edu/nets/intro/staff/siemsen/tools/editors/textmate/
 
