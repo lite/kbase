@@ -1,3 +1,8 @@
+RVM
+====
+rvm wrapper rbx@mate textmate
+TM_RUBY `which textmate_ruby`
+
 Plugins
 ====
 

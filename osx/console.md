@@ -1,33 +1,53 @@
++ scutil
+
+change hostname
+
+    sudo scutil --set HostName larryx.local
+
++ sshuttle 
+
+Install sshuttle
+
+    brew install sshuttle
+    sshuttle -r root@fssle.com 0.0.0.0/0 -vv
+
++ coreutils
+
+Install sed and awk.
+
+  	brew install coreutils gnu-sed gawk findutils --default-names
+    sed -e '/^$/d' $filename
+    gawk -F: '{ print $1 }' /etc/passwd
+ 
 + tutti
 
 Interactively run Javascript on multiple browsers
 
 	https://github.com/airportyh/Tutti/
 
-	brew install nod npm
-	curl http://npmjs.org/install.sh | sh
-	npm install tutti
-	tutti http://tuttijs.com:46071
+  	brew install nod npm
+  	curl http://npmjs.org/install.sh | sh
+  	npm install tutti
+  	tutti http://tuttijs.com:46071
 
 + virtualbox
 
 use VBoxHeadless as the front-end to the internal virtualization engine
 
-	VBoxManage startvm $vm --type headless
-	VBoxHeadless --startvm $vm
+  	VBoxManage startvm $vm --type headless
+  	VBoxHeadless --startvm $vm
 
 + sysctl
 
 reducing in case of available port bottleneck.
 
-	sudo sysctl -w net.inet.tcp.msl=1000
-	
+  	sudo sysctl -w net.inet.tcp.msl=1000
 
 + utils
 
 install tools for sys admin
 
-	brew install axel iftop wget git lsof bmon unrar htop p7zip w3m watch ragel iperf
+  	brew install axel iftop wget git lsof bmon unrar htop p7zip w3m watch ragel iperf monit
 
 + lsof 
 

@@ -30,6 +30,13 @@ run command in shell
 	cd ~/.pow
 	ln -s /path/to/myapp
 	
+  $ curl get.pow.cx/uninstall.sh | sh #if you have pow installed
+  $ echo 'export POW_DST_PORT=88' >> ~/.powconfig
+  $ curl get.pow.cx | sh
+  $ sudo curl https://raw.github.com/gist/1058580/zzz_pow.conf -o /etc/apache2/other/zzz_pow.conf
+  $ sudo apachectl restart
+
+	
 + buildr
 
 + capybara

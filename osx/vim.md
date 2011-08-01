@@ -110,3 +110,11 @@ Working with multiple files
 + ctrl+ww - switch between windows
 + ctrl+wq - Quit a window
 + ctrl+wv - Split windows vertically
+
+Fuzzy Finder
+====
+
++ map <leader>F :FufFile<CR>
++ map <leader>f :FufTaggedFile<CR>
++ map <leader>g :FufTag<CR>
++ map <leader>b :FufBuffer<CR>  
