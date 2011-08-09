@@ -1,3 +1,9 @@
+KeyBinding
+====
+  
+Control-Command-T symbol
+Control-Alt-Command-K to get lists of the current key bindings.
+
 RVM
 ====
 rvm wrapper rbx@mate textmate

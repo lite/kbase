@@ -6,6 +6,15 @@ A:
     mysql -e "status"
     UNIX socket:		/usr/local/var/mysql/mysql.sock
     ln -sf /usr/local/var/mysql/mysql.sock /tmp/mysql.sock
+    
+    # ~/.my.cnf
+    [client]
+    port = 3306
+    socket = /tmp/mysql.sock
+    [mysqld]
+    bind-address = 127.0.0.1
+    port = 3306
+    socket = /tmp/mysql.sock
 
 buildr
 ====

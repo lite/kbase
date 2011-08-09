@@ -1,3 +1,15 @@
+
++ args
+
+args abbreviation
+
+  echo "hello" "word"
+  !! !-1 !4000 # echo "hello" "word"
+  !vim # last command with vim
+  echo !^
+  echo !$
+  cp ~/temp{,.bak} #cp ~/temp ~/temp.bak
+
 + scutil
 
 change hostname
@@ -17,7 +29,13 @@ Install sed and awk.
 
   	brew install coreutils gnu-sed gawk findutils --default-names
     sed -e '/^$/d' $filename
+    echo "123:abc:ce" | sed 's/123/ddd;/s/abc/dde' 
+    sed -n '2,6p' /etc/passwd 
     gawk -F: '{ print $1 }' /etc/passwd
+    echo "123:abc:ce" | awk 'BEGIN{FS=":"}{OFS="+"} {print $1,$2}'
+    echo "123:abc:ce" | awk -F: 'length()>5 {print $1,$2}'
+    git status | grep -n "Untacked" | awk -F: '{print $1}'
+    ps aux| grep firefox| awk '{print $2}' | xargs kill -9    
  
 + tutti
 
@@ -138,6 +156,7 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES
 ```
 find .. -name "example*"
 grep -r -i "message" *
+grep -i -e "\bprint" *.py
 ```
 
 + Install ruby-debug
@@ -181,6 +200,7 @@ idevice_id -l| xargs -I% echo "This is :[%]"
 
 ```
 ack layout
+ack -ai '\bzone[-_ ]id' .
 ```
 
 + dstat & sar

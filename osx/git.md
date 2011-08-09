@@ -1,6 +1,7 @@
 GIT Guide
 ====
 
+[Pro Git](http://progit.org/)
 [gitready](http://gitready.com/)
 [Git](http://ihower.tw/blog/archives/2591)
 
@@ -32,8 +33,14 @@ rollback
 svn -- not easy to use
 ----
 
-  git svn clone http://csshx.googlecode.com/svn/ -s
-  git remote add origin git@github.com:lite/csshx.git
-  git push -u origin master
-  git svn rebase
-  git push
+    git svn clone http://csshx.googlecode.com/svn/ -s
+    git remote add origin git@github.com:lite/csshx.git
+    git push -u origin master
+    git svn rebase
+    git push
+  
+optional parameter
+----
+
+    git status -s
+    git add -i
