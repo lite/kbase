@@ -1,0 +1,414 @@
+i  <Plug>(neocomplcache_start_unite_snippet) * unite#sources#snippet#start_complete()
+i  <Plug>(neocomplcache_start_unite_complete) * unite#sources#neocomplcache#start_complete()
+i  <Plug>(neocomplcache_select_quick_match) * <C-X><C-U><C-P><Down><C-Y>
+i  <Plug>(neocomplcache_start_auto_select_complete) * <C-X><C-U><C-P><Down>
+i  <Plug>(neocomplcache_start_auto_complete) * <C-X><C-U><C-P>
+i  <Plug>(neocomplcache_snippets_force_jump) * <SNR>110_trigger(<SNR>110_SID_PREFIX().'snippets_force_jump')
+i  <Plug>(neocomplcache_snippets_force_expand) * <SNR>110_trigger(<SNR>110_SID_PREFIX().'snippets_force_expand')
+i  <Plug>(neocomplcache_snippets_jump) * <SNR>110_trigger(<SNR>110_SID_PREFIX().'snippets_jump_or_expand')
+i  <Plug>(neocomplcache_snippets_expand) * <SNR>110_trigger(<SNR>110_SID_PREFIX().'snippets_expand_or_jump')
+i  <D-t>         <Esc>:CommandT<CR>
+i  <D-BS>        <C-U>
+i  <M-BS>        <C-W>
+i  <M-Down>      <C-O>}
+i  <D-Down>    * <C-End>
+i  <M-Up>        <C-O>{
+i  <D-Up>      * <C-Home>
+!  <M-Right>   * <C-Right>
+!  <D-Right>   * <End>
+!  <M-Left>    * <C-Left>
+!  <D-Left>    * <Home>
+i  <Plug>ZenCodingAnchorizeSummary * <Esc>:call zencoding#anchorizeURL(1)<CR>a
+i  <Plug>ZenCodingAnchorizeURL * <Esc>:call zencoding#anchorizeURL(0)<CR>a
+i  <Plug>ZenCodingRemoveTag * <Esc>:call zencoding#removeTag()<CR>a
+i  <Plug>ZenCodingSplitJoinTagInsert * <Esc>:call zencoding#splitJoinTag()<CR>a
+i  <Plug>ZenCodingToggleComment * <Esc>:call zencoding#toggleComment()<CR>a
+i  <Plug>ZenCodingImageSize * <Esc>:call zencoding#imageSize()<CR>a
+i  <Plug>ZenCodingPrev * <Esc>:call zencoding#moveNextPrev(1)<CR>
+i  <Plug>ZenCodingNext * <Esc>:call zencoding#moveNextPrev(0)<CR>
+i  <Plug>ZenCodingBalanceTagOutwardInsert * <Esc>:call zencoding#balanceTag(-1)<CR>a
+i  <Plug>ZenCodingBalanceTagInwardInsert * <Esc>:call zencoding#balanceTag(1)<CR>a
+i  <Plug>ZenCodingExpandWord * <C-G>u<Esc>:call zencoding#expandAbbr(1)<CR>a
+i  <Plug>ZenCodingExpandAbbr * <C-G>u<Esc>:call zencoding#expandAbbr(0)<CR>a
+i  <Plug>ISurround * <C-R>=<SNR>82_insert(1)<CR>
+i  <Plug>Isurround * <C-R>=<SNR>82_insert()<CR>
+i  <Plug>ragtagXmlV * <C-R>="&#".getchar().";"<CR>
+i  <Plug>ragtagUrlV * <C-R>=<SNR>66_urlv()<CR>
+i  <Plug>ragtagXmlEncode * <C-R>=<SNR>66_togglexmlescape()<CR>
+i  <Plug>ragtagUrlEncode * <C-R>=<SNR>66_toggleurlescape()<CR>
+i  <SNR>66_ragtagXmlEncode * <C-R>=<SNR>66_togglexmlescape()<CR>
+i  <SNR>66_ragtagUrlEncode * <C-R>=<SNR>66_toggleurlescape()<CR>
+i  <Plug>ragtagBSXml * <C-R>=<SNR>66_bspattern('&#\=\w*;\|<[^><]*>\=')<CR>
+i  <Plug>ragtagBSUrl * <C-R>=<SNR>66_bspattern('%\x\x\=\|&amp;')<CR>
+i  <SNR>66_urlspace * <C-R>=<SNR>66_getinput()=~?'\%([?&]\|&amp;\)[%a-z0-9._~+-]*=[%a-z0-9._~+-]*$'?'+':'%20'<CR>
+i  <Plug>ragtagHtmlComplete * <C-R>=<SNR>66_htmlEn()<CR><C-X><C-O><C-P><C-R>=<SNR>66_htmlDis()<CR><C-N>
+i  <Plug>AlwaysEnd & <SNR>58_AlwaysEnd
+i  <Plug>DiscretionaryEnd & <SNR>58_DiscretionaryEnd
+i  <SNR>58_AlwaysEnd * <C-R>=<SNR>58_crend(1)<CR>
+i  <SNR>58_DiscretionaryEnd * <C-R>=<SNR>58_crend(0)<CR>
+i  <Plug>NERDCommenterInInsert * <Space><BS><Esc>:call NERDComment(0, "insert")<CR>
+i  <Plug>delimitMateMRightMouse * <C-R>=delimitMate#Finish(1)<CR><RightMouse>
+i  <Plug>delimitMateMLeftMouse * <C-R>=delimitMate#Finish(1)<CR><LeftMouse>
+i  <Plug>delimitMateS-Up * pumvisible() ? "\<S-Up>" : "\<C-R>=\<SNR>49_Finish()\<CR>\<S-Up>"
+i  <Plug>delimitMateS-Down * pumvisible() ? "\<S-Down>" : "\<C-R>=\<SNR>49_Finish()\<CR>\<S-Down>"
+i  <Plug>delimitMatePageDown * pumvisible() ? "\<PageDown>" : "\<C-R>=\<SNR>49_Finish()\<CR>\<PageDown>"
+i  <Plug>delimitMatePageUp * pumvisible() ? "\<PageUp>" : "\<C-R>=\<SNR>49_Finish()\<CR>\<PageUp>"
+i  <Plug>delimitMateDown * pumvisible() ? "\<Down>" : "\<C-R>=\<SNR>49_Finish()\<CR>\<Down>"
+i  <Plug>delimitMateUp * pumvisible() ? "\<Up>" : "\<C-R>=\<SNR>49_Finish()\<CR>\<Up>"
+i  <Plug>delimitMateEnd * <C-R>=<SNR>49_Finish()<CR><End>
+i  <Plug>delimitMateHome * <C-R>=<SNR>49_Finish()<CR><Home>
+i  <Plug>delimitMateRight * <C-R>=<SNR>49_Finish()<CR><Right>
+i  <Plug>delimitMateLeft * <C-R>=<SNR>49_Finish()<CR><Left>
+i  <Plug>delimitMateEsc * <C-R>=<SNR>49_Finish()<CR><Esc>
+i  <Plug>delimitMateDel * <C-R>=delimitMate#Del()<CR>
+i  <Plug>delimitMateS-Tab * <C-R>=delimitMate#JumpAny("\<S-Tab>")<CR>
+i  <Plug>delimitMateSpace * <C-R>=delimitMate#ExpandSpace()<CR>
+i  <Plug>delimitMateCR * <C-R>=delimitMate#ExpandReturn()<CR>
+i  <Plug>delimitMateS-BS * delimitMate#WithinEmptyPair() ? "\<C-R>=delimitMate#Del()\<CR>" : "\<S-BS>"
+i  <Plug>delimitMateBS * <C-R>=delimitMate#BS()<CR>
+i  <Plug>delimitMate` * <C-R>=delimitMate#QuoteDelim("\`")<CR>
+i  <Plug>delimitMate' * <C-R>=delimitMate#QuoteDelim("\'")<CR>
+i  <Plug>delimitMate" * <C-R>=delimitMate#QuoteDelim("\"")<CR>
+i  <Plug>delimitMate] * <C-R>=delimitMate#JumpOut("\]")<CR>
+i  <Plug>delimitMate} * <C-R>=delimitMate#JumpOut("\}")<CR>
+i  <Plug>delimitMate) * <C-R>=delimitMate#JumpOut("\)")<CR>
+i  <Plug>delimitMate[ * [<C-R>=delimitMate#ParenDelim("]")<CR>
+i  <Plug>delimitMate{ * {<C-R>=delimitMate#ParenDelim("}")<CR>
+i  <Plug>delimitMate( * (<C-R>=delimitMate#ParenDelim(")")<CR>
+i  <BS>        * <C-R>=<SNR>22_OpenCloseBackspace()<CR>
+i  ï           * <C-O>o
+i  <C-G>S        <Plug>ISurround
+i  <C-G>s        <Plug>Isurround
+i  <C-H>       * <C-R>=<SNR>22_OpenCloseBackspace()<CR>
+i  <CR>          <CR><Plug>DiscretionaryEnd
+i  <C-S>         <Plug>Isurround
+i  <C-X><CR>     <CR><Plug>AlwaysEnd
+i  <C-Y>A        <Plug>ZenCodingAnchorizeSummary
+i  <C-Y>a        <Plug>ZenCodingAnchorizeURL
+i  <C-Y>k        <Plug>ZenCodingRemoveTag
+i  <C-Y>j        <Plug>ZenCodingSplitJoinTagInsert
+i  <C-Y>/        <Plug>ZenCodingToggleComment
+i  <C-Y>i        <Plug>ZenCodingImageSize
+i  <C-Y>N        <Plug>ZenCodingPrev
+i  <C-Y>n        <Plug>ZenCodingNext
+i  <C-Y>D        <Plug>ZenCodingBalanceTagOutwardInsert
+i  <C-Y>d        <Plug>ZenCodingBalanceTagInwardInsert
+i  <C-Y>;        <Plug>ZenCodingExpandWord
+i  <C-Y>,        <Plug>ZenCodingExpandAbbr
+i  <Esc>       * <C-R>=<SNR>22_CloseStackPop('')<CR><Esc>
+i  <C-_>s      * <C-O>:TCommentAs <C-R>=&ft<CR>_
+i  <C-_>n      * <C-O>:TCommentAs <C-R>=&ft<CR><Space>
+i  <C-_>a      * <C-O>:TCommentAs<Space>
+i  <C-_>b      * <C-O>:TCommentBlock<CR>
+i  <C-_>r      * <C-O>:TCommentRight<CR>
+i  <C-_><Space> * <C-O>:TComment<Space>
+i  <C-_>p      * <C-O>:norm! m`vip<CR>:TComment<CR><C-O>``
+i  <C-_><C-_>  * <C-O>:TComment<CR>
+i  "           * <C-R>=<SNR>22_QuoteDelim('"')<CR>
+i  '           * <C-R>=match(getline('.')[col('.') - 2],'\w') == 0 && getline('.')[col('.')-1] != "'" ? "'" : <SNR>22_QuoteDelim("'")<CR>
+i  (           * (<C-R>=<SNR>22_CloseStackPush(')')<CR>
+i  )           * <C-R>=<SNR>22_CloseStackPop(')')<CR>
+i  [           * [<C-R>=<SNR>22_CloseStackPush(']')<CR>
+i  ]           * <C-R>=<SNR>22_CloseStackPop(']')<CR>
+i  {           * <C-R>=<SNR>22_OpenSpecial('{','}')<CR>
+i  |           * |<Esc>:call <SNR>2_align()<CR>a
+i  }           * <C-R>=<SNR>22_CloseStackPop('}')<CR>
+
+   <C-H>         <C-W>h
+   <NL>          <C-W>j
+   <C-K>         <C-W>k
+   <C-L>         <C-W>l
+s  <CR>        * a<BS>
+n  <C-W>o        <Plug>ZoomWin
+s  <C-X>       * a<BS><C-X>
+n  <C-Y>A        <Plug>ZenCodingAnchorizeSummary
+n  <C-Y>a        <Plug>ZenCodingAnchorizeURL
+n  <C-Y>k        <Plug>ZenCodingRemoveTag
+n  <C-Y>j        <Plug>ZenCodingSplitJoinTagNormal
+n  <C-Y>/        <Plug>ZenCodingToggleComment
+n  <C-Y>i        <Plug>ZenCodingImageSize
+n  <C-Y>N        <Plug>ZenCodingPrev
+n  <C-Y>n        <Plug>ZenCodingNext
+v  <C-Y>D        <Plug>ZenCodingBalanceTagOutwardVisual
+n  <C-Y>D        <Plug>ZenCodingBalanceTagOutwardNormal
+v  <C-Y>d        <Plug>ZenCodingBalanceTagInwardVisual
+n  <C-Y>d        <Plug>ZenCodingBalanceTagInwardNormal
+n  <C-Y>;        <Plug>ZenCodingExpandWord
+n  <C-Y>,        <Plug>ZenCodingExpandNormal
+v  <C-Y>,        <Plug>ZenCodingExpandVisual
+   <C-_>s      * :TCommentAs <C-R>=&ft<CR>_
+   <C-_>n      * :TCommentAs <C-R>=&ft<CR><Space>
+   <C-_>a      * :TCommentAs<Space>
+   <C-_>b      * :TCommentBlock<CR>
+v  <C-_>r      * :TCommentRight<CR>
+v  <C-_>i      * :TCommentInline<CR>
+no <C-_>r      * :TCommentRight<CR>
+   <C-_><Space> * :TComment<Space>
+   <C-_>p      * m`vip:TComment<CR>``
+v  <C-_><C-_>  * :TCommentMaybeInline<CR>
+no <C-_><C-_>  * :TComment<CR>
+n  #           * :let v:errmsg=''<CR>:silent! norm! #<CR>:call <SNR>61_ShowCurrentSearchIndex(0,'!')<CR>
+s  %           * a<BS>%
+o  %           * v:<C-U>call <SNR>18_Match_wrapper('',1,'o') <CR>
+x  %           * :<C-U>call <SNR>18_Match_wrapper('',1,'v') <CR>m'gv``
+n  %           * :<C-U>call <SNR>18_Match_wrapper('',1,'n') <CR>
+s  '           * a<BS>'
+n  *           * :let v:errmsg=''<CR>:silent! norm! *<CR>:call <SNR>61_ShowCurrentSearchIndex(0,'!')<CR>
+n  /           * :call <SNR>61_DelaySearchIndex(0,'')<CR>/
+n  ?           * :call <SNR>61_DelaySearchIndex(0,'')<CR>?
+n  N           * :let v:errmsg=''<CR>:silent! norm! N<CR>:call <SNR>61_ShowCurrentSearchIndex(0,'!')<CR>
+x  S             <Plug>VSurround
+s  U           * a<BS>U
+n  [xx           <Plug>unimpairedLineXmlEncode
+x  [x            <Plug>unimpairedXmlEncode
+n  [x            <Plug>unimpairedXmlEncode
+n  [uu           <Plug>unimpairedLineUrlEncode
+x  [u            <Plug>unimpairedUrlEncode
+n  [u            <Plug>unimpairedUrlEncode
+n  [yy           <Plug>unimpairedLineStringEncode
+x  [y            <Plug>unimpairedStringEncode
+n  [y            <Plug>unimpairedStringEncode
+x  [e            <Plug>unimpairedMoveUp
+n  [e            <Plug>unimpairedMoveUp
+n  [<Space>      <Plug>unimpairedBlankUp
+n  [o            <Plug>unimpairedOPrevious
+n  [Q            <Plug>unimpairedQFirst
+n  [q            <Plug>unimpairedQPrevious
+n  [L            <Plug>unimpairedLFirst
+n  [l            <Plug>unimpairedLPrevious
+n  [B            <Plug>unimpairedBFirst
+n  [b            <Plug>unimpairedBPrevious
+n  [A            <Plug>unimpairedAFirst
+n  [a            <Plug>unimpairedAPrevious
+o  [%          * v:<C-U>call <SNR>18_MultiMatch("bW", "o") <CR>
+v  [%            <Esc>[%m'gv``
+n  [%          * :<C-U>call <SNR>18_MultiMatch("bW", "n") <CR>
+s  \           * a<BS>\
+   \_s         * :TCommentAs <C-R>=&ft<CR>_
+   \_n         * :TCommentAs <C-R>=&ft<CR><Space>
+   \_a         * :TCommentAs<Space>
+   \_b         * :TCommentBlock<CR>
+v  \_r         * :TCommentRight<CR>
+no \_r         * :TCommentRight<CR>
+v  \_i         * :TCommentInline<CR>
+   \_<Space>   * :TComment<Space>
+   \_p         * vip:TComment<CR>
+v  \__         * :TCommentMaybeInline<CR>
+no \__         * :TComment<CR>
+v  \rem        * :RExtractMethod<CR>
+v  \rriv       * :RRenameInstanceVariable<CR>
+v  \rrlv       * :RRenameLocalVariable<CR>
+v  \relv       * :RExtractLocalVariable<CR>
+v  \rec        * :RExtractConstant<CR>
+n  \rcpc       * :RConvertPostConditional<CR>
+n  \rel        * :RExtractLet<CR>
+n  \rit        * :RInlineTemp<CR>
+n  \rap        * :RAddParameter<CR>
+   \cd           <Plug>RooterChangeToRootDirectory
+n  \\          * :call <SNR>61_ShowCurrentSearchIndex(1,'')<CR>
+n  \/          * :call <SNR>61_ShowCurrentSearchIndex(1,'')<CR>
+n  \bv         & :BufExplorerVerticalSplit<CR>
+n  \bs         & :BufExplorerHorizontalSplit<CR>
+n  \be         & :BufExplorer<CR>
+n  \t            :CommandT<CR>
+n  \a            <Plug>ToggleAutoCloseMappings
+   \p            <Plug>PeepOpen
+   \o            o<Esc>
+   \O            O<Esc>
+   \]            <Plug>MakeGreen " change from \t to \]
+   \sf           :RSfunctionaltest<CR>
+   \su           :RSunittest<CR>
+   \sv           :RSview<CR>
+   \sc           :RScontroller<CR>
+   \sm           :RSmodel<CR>
+   \tf           :RTfunctionaltest<CR>
+   \tu           :RTunittest<CR>
+   \tv           :RTview<CR>
+   \tc           :RTcontroller<CR>
+   \tm           :RTmodel<CR>
+   \u            :Runittest<CR>
+   \v            :Rview<CR>
+   \c            <Plug>NERDCommenterToggle
+   \m            :Rmodel<CR>
+   \b            :FufBuffer<CR>
+   \g            :FufTag<CR>
+   \f            :Rfunctionaltest<CR>
+   \F            :FufFile<CR>
+   \h            :noh<CR>
+   \w            :call RemoveWhitespace()<CR>
+n  ]xx           <Plug>unimpairedLineXmlDecode
+x  ]x            <Plug>unimpairedXmlDecode
+n  ]x            <Plug>unimpairedXmlDecode
+n  ]uu           <Plug>unimpairedLineUrlDecode
+x  ]u            <Plug>unimpairedUrlDecode
+n  ]u            <Plug>unimpairedUrlDecode
+n  ]yy           <Plug>unimpairedLineStringDecode
+x  ]y            <Plug>unimpairedStringDecode
+n  ]y            <Plug>unimpairedStringDecode
+x  ]e            <Plug>unimpairedMoveDown
+n  ]e            <Plug>unimpairedMoveDown
+n  ]<Space>      <Plug>unimpairedBlankDown
+n  ]o            <Plug>unimpairedONext
+n  ]Q            <Plug>unimpairedQLast
+n  ]q            <Plug>unimpairedQNext
+n  ]L            <Plug>unimpairedLLast
+n  ]l            <Plug>unimpairedLNext
+n  ]B            <Plug>unimpairedBLast
+n  ]b            <Plug>unimpairedBNext
+n  ]A            <Plug>unimpairedALast
+n  ]a            <Plug>unimpairedANext
+o  ]%          * v:<C-U>call <SNR>18_MultiMatch("W",  "o") <CR>
+v  ]%            <Esc>]%m'gv``
+n  ]%          * :<C-U>call <SNR>18_MultiMatch("W",  "n") <CR>
+s  ^           * a<BS>^
+s  `           * a<BS>`
+v  aI          * :<C-U>cal <SNR>60_HandleTextObjectMapping(0, 1, 1, [line("'<"), line("'>"), col("'<"), col("'>")])<CR><Esc>gv
+o  aI          * :<C-U>cal <SNR>60_HandleTextObjectMapping(0, 1, 0, [line("."), line("."), col("."), col(".")])<CR>
+v  ai          * :<C-U>cal <SNR>60_HandleTextObjectMapping(0, 0, 1, [line("'<"), line("'>"), col("'<"), col("'>")])<CR><Esc>gv
+o  ai          * :<C-U>cal <SNR>60_HandleTextObjectMapping(0, 0, 0, [line("."), line("."), col("."), col(".")])<CR>
+v  a%            <Esc>[%v]%
+n  cs            <Plug>Csurround
+n  cr            <Plug>Coerce
+n  ds            <Plug>Dsurround
+n  gx            <Plug>NetrwBrowseX
+v  gC          * :TCommentMaybeInline<CR>
+n  gCc         * :let w:tcommentPos = getpos(".") | set opfunc=tcomment#OperatorLineAnyway<CR>g@$
+n  gC          * :let w:tcommentPos = getpos(".") | set opfunc=tcomment#OperatorAnyway<CR>g@
+v  gc          * :TCommentMaybeInline<CR>
+n  gcc         * :let w:tcommentPos = getpos(".") | set opfunc=tcomment#OperatorLine<CR>g@$
+n  gc          * :let w:tcommentPos = getpos(".") | set opfunc=tcomment#Operator<CR>g@
+x  gS            <Plug>VgSurround
+n  g/          * :call <SNR>61_ShowCurrentSearchIndex(1,'')<CR>
+o  g%          * v:<C-U>call <SNR>18_Match_wrapper('',0,'o') <CR>
+v  g%          * :<C-U>call <SNR>18_Match_wrapper('',0,'v') <CR>m'gv``
+n  g%          * :<C-U>call <SNR>18_Match_wrapper('',0,'n') <CR>
+v  iI          * :<C-U>cal <SNR>60_HandleTextObjectMapping(1, 1, 1, [line("'<"), line("'>"), col("'<"), col("'>")])<CR><Esc>gv
+o  iI          * :<C-U>cal <SNR>60_HandleTextObjectMapping(1, 1, 0, [line("."), line("."), col("."), col(".")])<CR>
+v  ii          * :<C-U>cal <SNR>60_HandleTextObjectMapping(1, 0, 1, [line("'<"), line("'>"), col("'<"), col("'>")])<CR><Esc>gv
+o  ii          * :<C-U>cal <SNR>60_HandleTextObjectMapping(1, 0, 0, [line("."), line("."), col("."), col(".")])<CR>
+n  n           * :let v:errmsg=''<CR>:silent! norm! n<CR>:call <SNR>61_ShowCurrentSearchIndex(0,'!')<CR>
+x  s             <Plug>Vsurround
+n  ySS           <Plug>YSsurround
+n  ySs           <Plug>YSsurround
+n  yss           <Plug>Yssurround
+n  yS            <Plug>YSurround
+n  ys            <Plug>Ysurround
+s  <Left>      * <Esc>bi
+s  <Right>     * <Esc>a
+s  <BS>        * a<BS>
+s  <Plug>(neocomplcache_snippets_force_jump) * <SNR>110_trigger(<SNR>110_SID_PREFIX().'snippets_force_jump')
+s  <Plug>(neocomplcache_snippets_force_expand) * <SNR>110_trigger(<SNR>110_SID_PREFIX().'snippets_force_expand')
+s  <Plug>(neocomplcache_snippets_jump) * <SNR>110_trigger(<SNR>110_SID_PREFIX().'snippets_jump_or_expand')
+s  <Plug>(neocomplcache_snippets_expand) * <SNR>110_trigger(<SNR>110_SID_PREFIX().'snippets_expand_or_jump')
+   <C-D-+>       :cnfile<CR> zz
+   <C-D-->       :cpfile<CR> zz
+   <D-w>         :call TabClose()<CR>
+   <D-e>         :call StartTerm()<CR>
+   <D-F>         :Ack<Space>
+   <D-t>         :CommandT<CR>
+   <M-Down>      }
+   <D-Down>    * <C-End>
+   <M-Up>        {
+   <D-Up>      * <C-Home>
+   <M-Right>   * <C-Right>
+   <D-Right>   * <End>
+   <M-Left>    * <C-Left>
+   <D-Left>    * <Home>
+n  <Plug>NetrwBrowseX * :call netrw#NetrwBrowseX(expand("<cWORD>"),0)<CR>
+n  <Plug>ZoomWin & :set lz<CR>:silent call ZoomWin#ZoomWin()<CR>:set nolz<CR>
+n  <Plug>ZenCodingAnchorizeSummary * :call zencoding#anchorizeURL(1)<CR>
+n  <Plug>ZenCodingAnchorizeURL * :call zencoding#anchorizeURL(0)<CR>
+n  <Plug>ZenCodingRemoveTag * :call zencoding#removeTag()<CR>
+n  <Plug>ZenCodingSplitJoinTagNormal * :call zencoding#splitJoinTag()<CR>
+n  <Plug>ZenCodingToggleComment * :call zencoding#toggleComment()<CR>
+n  <Plug>ZenCodingImageSize * :call zencoding#imageSize()<CR>
+n  <Plug>ZenCodingPrev * :call zencoding#moveNextPrev(1)<CR>
+n  <Plug>ZenCodingNext * :call zencoding#moveNextPrev(0)<CR>
+v  <Plug>ZenCodingBalanceTagOutwardVisual * :call zencoding#balanceTag(-2)<CR>
+n  <Plug>ZenCodingBalanceTagOutwardNormal * :call zencoding#balanceTag(-1)<CR>
+v  <Plug>ZenCodingBalanceTagInwardVisual * :call zencoding#balanceTag(2)<CR>
+n  <Plug>ZenCodingBalanceTagInwardNormal * :call zencoding#balanceTag(1)<CR>
+n  <Plug>ZenCodingExpandWord * :call zencoding#expandAbbr(1)<CR>
+n  <Plug>ZenCodingExpandNormal * :call zencoding#expandAbbr(3)<CR>
+v  <Plug>ZenCodingExpandVisual * :call zencoding#expandAbbr(2)<CR>
+n  <Plug>unimpairedLineXmlDecode * :<C-U>call <SNR>84_Transform("XmlDecode",v:count1)<CR>
+x  <Plug>unimpairedXmlDecode * :<C-U>call <SNR>84_Transform("XmlDecode",visualmode())<CR>
+n  <Plug>unimpairedXmlDecode * :<C-U>call <SNR>84_TransformSetup("XmlDecode")<CR>g@
+n  <Plug>unimpairedLineXmlEncode * :<C-U>call <SNR>84_Transform("XmlEncode",v:count1)<CR>
+x  <Plug>unimpairedXmlEncode * :<C-U>call <SNR>84_Transform("XmlEncode",visualmode())<CR>
+n  <Plug>unimpairedXmlEncode * :<C-U>call <SNR>84_TransformSetup("XmlEncode")<CR>g@
+n  <Plug>unimpairedLineUrlDecode * :<C-U>call <SNR>84_Transform("UrlDecode",v:count1)<CR>
+x  <Plug>unimpairedUrlDecode * :<C-U>call <SNR>84_Transform("UrlDecode",visualmode())<CR>
+n  <Plug>unimpairedUrlDecode * :<C-U>call <SNR>84_TransformSetup("UrlDecode")<CR>g@
+n  <Plug>unimpairedLineUrlEncode * :<C-U>call <SNR>84_Transform("UrlEncode",v:count1)<CR>
+x  <Plug>unimpairedUrlEncode * :<C-U>call <SNR>84_Transform("UrlEncode",visualmode())<CR>
+n  <Plug>unimpairedUrlEncode * :<C-U>call <SNR>84_TransformSetup("UrlEncode")<CR>g@
+n  <Plug>unimpairedLineStringDecode * :<C-U>call <SNR>84_Transform("StringDecode",v:count1)<CR>
+x  <Plug>unimpairedStringDecode * :<C-U>call <SNR>84_Transform("StringDecode",visualmode())<CR>
+n  <Plug>unimpairedStringDecode * :<C-U>call <SNR>84_TransformSetup("StringDecode")<CR>g@
+n  <Plug>unimpairedLineStringEncode * :<C-U>call <SNR>84_Transform("StringEncode",v:count1)<CR>
+x  <Plug>unimpairedStringEncode * :<C-U>call <SNR>84_Transform("StringEncode",visualmode())<CR>
+n  <Plug>unimpairedStringEncode * :<C-U>call <SNR>84_TransformSetup("StringEncode")<CR>g@
+x  <Plug>unimpairedMoveDown * :<C-U>exe 'norm m`'|exe '''<,''>move''>+'.v:count1<CR>``
+x  <Plug>unimpairedMoveUp * :<C-U>exe 'norm m`'|exe '''<,''>move--'.v:count1<CR>``
+n  <Plug>unimpairedMoveDown * :<C-U>exe 'norm m`'|exe 'move+'.v:count1<CR>``
+n  <Plug>unimpairedMoveUp * :<C-U>exe 'norm m`'|exe 'move--'.v:count1<CR>``
+n  <Plug>unimpairedBlankDown * :<C-U>put =repeat(nr2char(10),v:count)|'[-1<CR>
+n  <Plug>unimpairedBlankUp * :<C-U>put!=repeat(nr2char(10),v:count)|']+1<CR>
+n  <Plug>unimpairedOPrevious * :<C-U>edit `=<SNR>84_FileByOffset(-v:count1)`<CR>
+n  <Plug>unimpairedONext * :<C-U>edit `=<SNR>84_FileByOffset(v:count1)`<CR>
+n  <Plug>unimpairedQLast   :<C-U>exe "clast ".(v:count ? v:count : "")<CR>
+n  <Plug>unimpairedQFirst   :<C-U>exe "cfirst ".(v:count ? v:count : "")<CR>
+n  <Plug>unimpairedQNext   :<C-U>exe "cnext ".(v:count ? v:count : "")<CR>
+n  <Plug>unimpairedQPrevious   :<C-U>exe "cprevious ".(v:count ? v:count : "")<CR>
+n  <Plug>unimpairedLLast   :<C-U>exe "llast ".(v:count ? v:count : "")<CR>
+n  <Plug>unimpairedLFirst   :<C-U>exe "lfirst ".(v:count ? v:count : "")<CR>
+n  <Plug>unimpairedLNext   :<C-U>exe "lnext ".(v:count ? v:count : "")<CR>
+n  <Plug>unimpairedLPrevious   :<C-U>exe "lprevious ".(v:count ? v:count : "")<CR>
+n  <Plug>unimpairedBLast   :<C-U>exe "blast ".(v:count ? v:count : "")<CR>
+n  <Plug>unimpairedBFirst   :<C-U>exe "bfirst ".(v:count ? v:count : "")<CR>
+n  <Plug>unimpairedBNext   :<C-U>exe "bnext ".(v:count ? v:count : "")<CR>
+n  <Plug>unimpairedBPrevious   :<C-U>exe "bprevious ".(v:count ? v:count : "")<CR>
+n  <Plug>unimpairedALast   :<C-U>exe "last ".(v:count ? v:count : "")<CR>
+n  <Plug>unimpairedAFirst   :<C-U>exe "first ".(v:count ? v:count : "")<CR>
+n  <Plug>unimpairedANext   :<C-U>exe "next ".(v:count ? v:count : "")<CR>
+n  <Plug>unimpairedAPrevious   :<C-U>exe "previous ".(v:count ? v:count : "")<CR>
+v  <Plug>VgSurround * :<C-U>call <SNR>82_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)<CR>
+v  <Plug>VSurround * :<C-U>call <SNR>82_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)<CR>
+v  <Plug>Vsurround * :<C-U>call <SNR>82_opfunc(visualmode())<CR>
+n  <Plug>YSurround * :<C-U>set opfunc=<SNR>82_opfunc2<CR>g@
+n  <Plug>Ysurround * :<C-U>set opfunc=<SNR>82_opfunc<CR>g@
+n  <Plug>YSsurround * :<C-U>call <SNR>82_opfunc2(v:count1)<CR>
+n  <Plug>Yssurround * :<C-U>call <SNR>82_opfunc(v:count1)<CR>
+n  <Plug>Csurround * :<C-U>call <SNR>82_changesurround()<CR>
+n  <Plug>Dsurround * :<C-U>call <SNR>82_dosurround(<SNR>82_inputtarget())<CR>
+   <SNR>69_ChangeToRootDirectory * :call <SNR>69_ChangeToRootDirectory()<CR>
+   <Plug>RooterChangeToRootDirectory & <SNR>69_ChangeToRootDirectory
+n  <Plug>Coerce * :<C-U>call <SNR>55_coerce(nr2char(getchar()))<CR>
+n  <Plug>NERDCommenterAppend   :call NERDComment(0, "append")<CR>
+n  <Plug>NERDCommenterToEOL * :call NERDComment(0, "toEOL")<CR>
+v  <Plug>NERDCommenterUncomment * :call NERDComment(1, "uncomment")<CR>
+n  <Plug>NERDCommenterUncomment * :call NERDComment(0, "uncomment")<CR>
+v  <Plug>NERDCommenterNest * <Esc>:call NERDComment(1, "nested")<CR>
+n  <Plug>NERDCommenterNest * :call NERDComment(0, "nested")<CR>
+v  <Plug>NERDCommenterAlignBoth * <Esc>:call NERDComment(1, "alignBoth")<CR>
+n  <Plug>NERDCommenterAlignBoth * :call NERDComment(0, "alignBoth")<CR>
+v  <Plug>NERDCommenterAlignLeft * <Esc>:call NERDComment(1, "alignLeft")<CR>
+n  <Plug>NERDCommenterAlignLeft * :call NERDComment(0, "alignLeft")<CR>
+v  <Plug>NERDCommenterYank   <Esc>:call NERDComment(1, "yank")<CR>
+n  <Plug>NERDCommenterYank   :call NERDComment(0, "yank")<CR>
+v  <Plug>NERDCommenterInvert * <Esc>:call NERDComment(1, "invert")<CR>
+n  <Plug>NERDCommenterInvert * :call NERDComment(0, "invert")<CR>
+v  <Plug>NERDCommenterSexy * <Esc>:call NERDComment(1, "sexy")<CR>
+n  <Plug>NERDCommenterSexy * :call NERDComment(0, "sexy")<CR>
+v  <Plug>NERDCommenterMinimal * <Esc>:call NERDComment(1, "minimal")<CR>
+n  <Plug>NERDCommenterMinimal * :call NERDComment(0, "minimal")<CR>
+v  <Plug>NERDCommenterToggle * <Esc>:call NERDComment(1, "toggle")<CR>
+n  <Plug>NERDCommenterToggle * :call NERDComment(0, "toggle")<CR>
+v  <Plug>NERDCommenterComment * <Esc>:call NERDComment(1, "norm")<CR>
+n  <Plug>NERDCommenterComment * :call NERDComment(0, "norm")<CR>
+n  <Plug>NERDCommenterAltDelims * :call <SNR>51_SwitchToAlternativeDelimiters(1)<CR>
+n  <Plug>ToggleAutoCloseMappings   :call <SNR>22_ToggleAutoCloseMappings()<CR>
+   <SNR>19_Launch * :call <SNR>19_LaunchPeepOpenViaVim()<CR>
+   <Plug>PeepOpen & <SNR>19_Launch
+   <F8>          :NERDTreeToggle<CR>

@@ -1,6 +1,21 @@
 KeyBinding
 ====
-  
+Option-tab  indent line
+Command-Control-up/down move line
+
+Command-Shift-L select line
+Control-w select word
+
+Control-u/control-shift-u uppercase/downcase
+Command-Shift-left/right select left of cursor
+Control-Shift-k delete line
+Control-Shift-d duplicate line
+
+Command-Option-l show line number
+Control-h Lookup current word in documentation
+
+Command-Option-. Insert close element
+
 Control-Command-T symbol
 Control-Alt-Command-K to get lists of the current key bindings.
 

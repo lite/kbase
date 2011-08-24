@@ -39,6 +39,16 @@ svn -- not easy to use
     git svn rebase
     git push
   
+
+stash
+----
+
+    git stash save
+    git stash pop
+    git stash list
+    git stash create
+    git stash drop
+    
 optional parameter
 ----
 

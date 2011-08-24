@@ -75,3 +75,14 @@ Presenter should be simple and non-status
 ----
 
 In the interceptor, presenter should be non-status, use a service class instead of presenter.
+
+Presenter and Form should be split
+----
+
+Presenter is show, Form is for data save
+
+Naming
+----
+Java createForm
+ruby create_form
+html or css disabled-class

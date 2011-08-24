@@ -87,18 +87,6 @@ Resample image so height and width aren't greater than specified size, e.g. 100x
 
 	sips -Z 100x100 image.jpg
 
-+ keymap
-
-> + Ctrl-a moves to the start of the line
-> + Ctrl-e moves to the end of the line
-> + Ctrl-b move back on character
-> + Ctrl-f move forward one character
-> + Esc-b move back one word
-> + Esc-f move forward one word
-> + Esc-t arg1 arg2 => arg2 arg1
-> + Ctrl-u delete from the cursor to the beginning of the line
-> + Ctrl-k delete from the cursor to the end of the line
-
 + hdiutil 
 
 ```

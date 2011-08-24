@@ -1,3 +1,56 @@
+Repeat
+====
+
+The "." command repeats the last change made in normal mode. For example, if you press dw to delete a word, you can then press . to delete another word (. is dot, aka period or full stop).
+
+The "@:" command repeats the last command-line change (a command invoked with ":", for example :s/old/new/).
+
+You can move the cursor before using either of the repeat commands.
+
+Suppose you press dd to delete a line. Next, you might move the cursor, then press 5. (5 then dot). That will delete 5 lines.
+
+In normal mode, press J to join the next line onto the current line. Press . to join more lines.
+
+Or, you might use insert mode to type "hello ". Press Esc for normal mode, then move the cursor, and press . to insert "hello " again.
+
+Key binding on Vim
+====
+
+http://vim.wikia.com/wiki/Mapping_keys_in_Vim_-_Tutorial_(Part_1)
+
+:nmap - Display normal mode maps
+:imap - Display insert mode maps
+:vmap - Display visual and select mode maps
+:smap - Display select mode maps
+:xmap - Display visual mode maps
+:cmap - Display command-line mode maps
+:omap - Display operator pending mode maps
+
+n  Normal mode map. Defined using ':nmap' or ':nnoremap'.
+i  Insert mode map. Defined using ':imap' or ':inoremap'.
+v  Visual and select mode map. Defined using ':vmap' or ':vnoremap'.
+x  Visual mode map. Defined using ':xmap' or ':xnoremap'.
+s  Select mode map. Defined using ':smap' or ':snoremap'.
+c  Command-line mode map. Defined using ':cmap' or ':cnoremap'.
+o  Operator pending mode map. Defined using ':omap' or ':onoremap'.
+
+<Space>  Normal, Visual and operator pending mode map. Defined using
+         ':map' or ':noremap'.
+!  Insert and command-line mode map. Defined using 'map!' or
+
+:redir! > vim_maps.txt
+:map
+:map!
+:redir END
+
+Sudo in Vim
+===
+
+Save a file you edited in vim without the needed permissions
+http://vim.wikia.com/wiki/Su-write
+
++ :w !sudo tee % 
+
 Cursor movement
 ====
 
