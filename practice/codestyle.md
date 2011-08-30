@@ -79,10 +79,11 @@ In the interceptor, presenter should be non-status, use a service class instead 
 Presenter and Form should be split
 ----
 
-Presenter is show, Form is for data save
+Presenter is show, Form is for data save, controller use service to validate form, then render to presenter.
 
 Naming
 ----
-Java createForm
-ruby create_form
-html or css disabled-class
+Java createForm isValid
+ruby create_form has_content?
+html/css class="disabled"
+
