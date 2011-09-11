@@ -1,3 +1,42 @@
++ xargs
+
+cat test-data.txt | tr -s ' ' | cut -d ' ' -f 3 | xargs echo
+find . -name "*.txt" | xargs ls -l
+echo "ab cd ef ab" | tr -s " " | xargs -n 1 echo
+
++ find
+
+find . -name "*.txt"
+find . -name "*.txt" -exec ls -l {} \;
+find . -type f
+
++ head, tail
+
+cat test-data.txt | tail -n 3
+cat test-data.txt | head -n 3
+
++ unique
+
+cat test-data.txt | tr -s ' ' | cut -d ' ' -f 2 | uniq
+cat test-data.txt | tr -s ' ' | cut -d ' ' -f 2 | uniq -c
+
++ sort
+
+cat test-data.txt | sort
+cat test-data.txt | sort -n
+cat test-data.txt | sort -n -r
+
++ cut
+
+cat test-data.txt | cut -b 1,4-15,24-
+cat test-data.txt | cut -c 18-19
+cat test-data.txt | tr -s ' ' | cut -d ' ' -f 3,4
+
++ tr
+
+echo "abcd" | tr ab XY
+echo "ab  cd ef" | tr -s " "
+echo "ab  cd eff" | tr -s " f"
 
 + args
 

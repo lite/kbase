@@ -1,0 +1,4 @@
++ OCP
++ SRP
++ DI/IOC
++ AOP
